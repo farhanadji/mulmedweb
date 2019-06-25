@@ -16,15 +16,22 @@
         <!--Menu-->
         <nav id="menu">
             <ul>
-                <li><a href="">Synopsis</a></li>
-                <li><a href="">Teaser</a></li>
-                <li><a href="">Movie</a></li>
-                <li><a href="">Crew</a></li>
+                <li><a href="synopsis">Synopsis</a></li>
+                <li><a href="teaser">Teaser</a></li>
+                <li><a href="movie">Movie</a></li>
+                <li><a href="crew">Crew</a></li>
             </ul>
         </nav>
 
+        <div id="intro-logo">
+            <div id="logo-film-intro"><img src="/images/logo.png" alt="logo-lab"></div>
+            <div id="intro-btn">
+                <button id="start">More About The Movie</button>
+            </div>
+        </div>
+
         <!--Synopsis page-->
-        <div id="synopsis">
+        <div id="synopsis" class="container-content">
             <div id="intro">
                 <div class="container">
                         <div class="row align-items-center">
@@ -51,7 +58,7 @@
                                     </a>
                                 </div>
                         </div>
-                        <div class="col" align="center">
+                        <div class="col text-synopsis" align="center">
                             <div class="logo-film"><img src="/images/logo.png" alt="logo-lab"></div>
                                 "Life as Binusian" ini menceritakan kehidupan seorang Binusian dimulai sejak sebelum menjadi mahasiswa BINUS. Perjalanannya dimulai dari sejak pertama kali mendaftar SBMPTN, namun sayangnya ia tidak masuk ke semua pilihan Universitas Negri tempat ia mendaftar. Cerita pun dimulai! 4 tahun berkuliah sebagai mahasiswa BINUS University dan disini akan menceritakan beberapa kebiasaan yang dilakukan Binusian. Mau tau cerita lengkapnya?
                         </div>
@@ -59,12 +66,44 @@
                 </div>
             </div>
                 <!--end of synopsis-->
+
+                <!--Teaser-->
+                <div id="teaser" class="container-content">
+                    teaser
+                </div>
+                <!--end teaser-->
+
+                <!--movie-->
+                <div id="movie" class="container-content">
+                    movie
+                </div>
+                <!--end movie-->
+
+                <!--crew-->
+                <div id="crew" class="container-content">
+                    crew
+                </div>
+                <!--end crew-->
         
             </section>
 
 
-
-<script type="text/javascript" src="/js/script.js"></script>
+    <!--Background Image-->
+    <div class="bg-container">
+        <div class="slide-bg show" style="background-image: linear-gradient(
+            rgba(20,20,20, .7), 
+            rgba(20,20,20, .7)),url('/images/test1.jpg');"></div>
+        <div class="slide-bg" style="background-image: linear-gradient(
+            rgba(20,20,20, .7), 
+            rgba(20,20,20, .7)),url('/images/test2.jpg');"></div>
+        <div class="slide-bg" style="background-image: linear-gradient(
+            rgba(20,20,20, .7), 
+            rgba(20,20,20, .7)),url('/images/test3.jpg');"></div>
+    </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
 </body>
 
 </html>
