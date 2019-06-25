@@ -1,10 +1,3 @@
-	function synopsis(){
-		$("#synopsis").show();
-		$("#intro .container").velocity("transition.slideUpIn",{
-									stagger: 300,
-								 });
-	}
-
 	function intro(){
 		$("#menu ul li").hide();
 		$("#intro-logo").show();
@@ -15,6 +8,17 @@
 				animasiBtn();
 			}
 		});
+	}
+
+	function introOut(){
+		$("#start").velocity("transition.whirlOut",{
+									stagger: 200,
+									complete: function(){
+										$("#logo-film-intro img").velocity("transition.flipYOut"),
+										callMenu();
+										$("#menu ul li a[href='synopsis']").trigger("click");
+									}
+									});
 	}
  
 	function animasiBtn(){
@@ -41,6 +45,7 @@ function cycleBackgrounds() {
 };
 
 function callMenu(){
+	$("#menu").show();
 	$("#menu ul li").velocity("transition.slideLeftIn",{
 								stagger: 100
 							 });
@@ -50,18 +55,35 @@ function callMenu(){
 		$(this).parent("li").addClass("active").siblings().removeClass("active");
 	
 		var hrefString = $(this).attr("href");
-		if(hrefString == "synopsis"){
-			synopsis();
-			}else{
-				if(!$("#" + hrefString).is(":visible")){
-					$(".container-content").fadeOut(1000);
-					setTimeout(function(){
-					$("#" + hrefString).show();
-					window[hrefString]();
-				},1000);
-			}
+			if(!$("#" + hrefString).is(":visible")){
+				$(".container-content").fadeOut(1000);
+				setTimeout(function(){
+				$("#" + hrefString).show();
+				window[hrefString]();
+			},1000);
 		}
 	});
+}
+
+function synopsis(){
+	$("#synopsis").show();
+	$("#intro .container").velocity("transition.slideUpIn",{
+								stagger: 300,
+							 });
+}
+
+function teaser(){
+
+}
+
+function movie(){
+
+}
+
+function crew(){
+	$("#crew #crew-text").velocity("transition.flipYIn",{duration:2000});
+	$("#crew #crew-all").velocity("transition.slideUpBigIn",{duration:3000});
+	
 }
 
 	$(document).ready(function(){

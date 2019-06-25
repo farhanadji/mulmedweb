@@ -1,3 +1,13 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+    height: 100%;
+    width: 100%;
+	user-select: none;
+	font-family: 'Work Sans', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,7 +124,7 @@ a:hover {
     width: 400px;   
     top: 50%;
     left: 50%;
-    transform: translate(-29%,18%);
+    transform: translate(-25%,18%);
     position:  absolute;
 }
 
@@ -129,4 +139,73 @@ a:hover {
     color: white;
     display: none;
     cursor: pointer;
+}
+
+#crew #crew-text h1 {
+    margin-top: 5%;
+    color: white;
+    padding-bottom: 35px;
+}
+
+.crew-text-detail {
+    margin-bottom: 20px;
+}
+
+.crew-text-detail p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.img-farhan {
+    background: url('/images/farhan.jpeg') no-repeat;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 12px;
+}
+
+.img-dika {
+    background: url('/images/dika.jpeg') no-repeat;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 12px;
+}
+
+.img-luqman {
+    background: url('/images/luqman.JPG') no-repeat;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 12px;
+}
+
+.img-sherwin {
+    background: url('/images/sherwin.JPG') no-repeat;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 12px;
+}
+
+.img-stephen {
+    background: url('/images/stephen.jpeg') no-repeat;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 12px;
+}
+
+.img-wendy {
+    background: url('/images/wendy.JPG') no-repeat;
+    background-size: cover;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 12px;
 }
