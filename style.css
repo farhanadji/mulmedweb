@@ -5,7 +5,14 @@ html, body{
     height: 100%;
     width: 100%;
 	user-select: none;
-	font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+}
+
+img {
+    -moz-window-dragging: none;
+    -webkit-user-drag: none;
 }
 
 * {
@@ -21,6 +28,7 @@ body {
 }
 
 #menu {
+    z-index: 1;
     display: none;
     position: absolute;
     right: 30px;
@@ -147,9 +155,15 @@ a:hover {
 }
 
 #crew #crew-text h1 {
+    font-family: 'Signika', sans-serif;
     margin-top: 8%;
     color: white;
     padding-bottom: 35px;
+}
+
+.text-synopsis {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
 }
 
 .crew-text-detail {
@@ -198,7 +212,7 @@ a:hover {
 }
 
 .img-stephen {
-    background: url('/images/stephen.jpeg') no-repeat;
+    background: url('/images/stephen.jpg') no-repeat;
     background-size: cover;
     width:200px;
     height: 200px;
@@ -213,4 +227,34 @@ a:hover {
     height: 200px;
     border-radius:50%;
     margin-bottom: 12px;
+}
+
+#teaser #teaser-text h1 {
+    font-family: 'Signika', sans-serif;
+    margin-top: 8%;
+    color: white;
+    padding-bottom: 35px;
+}
+
+#movie #movie-text h1 {
+    font-family: 'Signika', sans-serif;
+    margin-top: 8%;
+    color: white;
+    padding-bottom: 35px;
+
+}
+
+#creditbar #credit-text h1 {
+    font-family: 'Signika', sans-serif;
+    margin-top: 8%;
+    color: white;
+    padding-bottom: 35px;
+}
+
+.text-thanks {
+    color: white;
+}
+
+.text-thanks p {
+    margin-bottom: 0px;
 }

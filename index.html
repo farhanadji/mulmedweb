@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/velocity.min.js"></script>
-	<script type="text/javascript" src="js/velocity.ui.js"></script>
+    <script type="text/javascript" src="js/velocity.ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Signika&display=swap" rel="stylesheet">
     <title>Video Promotion</title>
 </head>
 
@@ -20,6 +21,7 @@
                 <li><a href="teaser">Teaser</a></li>
                 <li><a href="movie">Movie</a></li>
                 <li><a href="crew">Crew</a></li>
+                <li><a href="creditbar">Credit</a></li>
             </ul>
         </nav>
 
@@ -37,7 +39,7 @@
             <div id="intro">
                 <div class="container">
                         <div class="row align-items-center">
-                        <div class="col">
+                        <div class="col-sm">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
@@ -60,9 +62,10 @@
                                     </a>
                                 </div>
                         </div>
-                        <div class="col text-synopsis" align="center">
+                        <div class="col-sm text-synopsis" align="center">
                             <div class="logo-film"><img src="/images/logo.png" alt="logo-lab"></div>
                                 "Life as Binusian" ini menceritakan kehidupan seorang Binusian dimulai sejak sebelum menjadi mahasiswa BINUS. Perjalanannya dimulai dari sejak pertama kali mendaftar SBMPTN, namun sayangnya ia tidak masuk ke semua pilihan Universitas Negri tempat ia mendaftar. Cerita pun dimulai! 4 tahun berkuliah sebagai mahasiswa BINUS University dan disini akan menceritakan beberapa kebiasaan yang dilakukan Binusian. Mau tau cerita lengkapnya?
+                                Tonton di website ini!
                         </div>
                     </div>
                 </div>
@@ -72,19 +75,19 @@
             
      <!--Teaser-->
      <div id="teaser" class="container-content">
-            teaser
+            <div id="teaser-text"><h1 align="center">TEASER</h1></div>
         </div>
         <!--end teaser-->
 
         <!--movie-->
         <div id="movie" class="container-content">
-            movie
+            <div id="movie-text"><h1 align="center">MOVIE</h1></div>
         </div>
         <!--end movie-->
 
         <!--crew-->
         <div id="crew" class="container-content">
-            <div id="crew-text"><h1 align="center">Crew</h1></div>
+            <div id="crew-text"><h1 align="center">CREW</h1></div>
             <div id="crew-all" class="container">
                 <div class="row">
                     <div class="col-sm" align="center">
@@ -141,6 +144,90 @@
             </div>
         </div>
         <!--end crew-->
+
+        <!--Credit-->
+        <div id="creditbar" class="container-content">
+            <div id="credit-text"><h1 align="center">CREDIT</h1></div>
+            <div id="credit-text-contain" class="container">
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Cast</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Stephen Riady</p>
+                        <p>Wendy Angdry</p>
+                        <p>Sherwin Yang</p>
+                        <p>Muhammad Juniandika</p>
+                        <p>Muhammad Luqman Hanif</p>
+                        <p>Alicia Viona</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Director</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Muhammad Luqman Hanif</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Cameraman</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Muhammad Juniandika</p>
+                        <p>Muhammad Luqman Hanif</p>
+                        <p>Farhan Adji Nugroho</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Editor</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Farhan Adji Nugroho</p>
+                        <p>Muhammad Juniandika</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Script Writer</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Sherwin Yang</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Sound</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Wendy Angdri</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Web Developer</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Farhan Adji Nugroho</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-thanks">
+                        <div class="float-right"><p><b>Thanks to</b></p></div>
+                    </div>
+                    <div class="col text-thanks">
+                        <p>Ibu Yen Lina Prasetio</p>
+                        <p>Security BINUS University</p>
+                        <p>Security The Icon Residence</p>
+                        <p>Alicia Viona</p>
+                        <p>Heggies Iqbal</p>
+                        <p>BINUS University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
             
 
 
@@ -156,7 +243,7 @@
             rgba(20,20,20, .7), 
             rgba(20,20,20, .7)),url('/images/test3.jpg');"></div>
     </div>
-        
+    <input type="hidden" id="progress_width" value="0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/script.js"></script>

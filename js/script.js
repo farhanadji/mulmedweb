@@ -41,7 +41,7 @@ function cycleBackgrounds() {
         index = index + 1 < $imageEls.length ? index + 1 : 0;
         $imageEls.eq(index).addClass('show');
         $imageEls.eq(index - 1).removeClass('show');
-    }, 7000);
+    }, 8000);
 };
 
 function callMenu(){
@@ -80,13 +80,17 @@ function movie(){
 
 }
 
-function crew(){
-	$("#crew #crew-text").velocity("transition.flipYIn",{duration:2000});
-	$("#crew #crew-all").velocity("transition.slideUpBigIn",{duration:3000});
-	
+function creditbar(){
+	$("#creditbar #credit-text").velocity("transition.flipYIn",{duration:4000});
+	$("#creditbar #credit-text-contain").velocity("transition.slideUpBigIn",{duration:3000});
 }
 
-	$(document).ready(function(){
-		intro();
-		cycleBackgrounds();
-	});
+function crew(){
+	$("#crew #crew-text").velocity("transition.flipYIn",{duration:4000});
+	$("#crew #crew-all").velocity("transition.slideUpIn",{duration:5000});
+}
+
+$(document).ready(function(){
+	intro();
+	cycleBackgrounds();
+});
